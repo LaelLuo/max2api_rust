@@ -1,0 +1,19 @@
+[package]
+name = "max2api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json", "stream"] }
+uuid = { version = "1.0", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors"] }
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+dotenv = "0.15"
